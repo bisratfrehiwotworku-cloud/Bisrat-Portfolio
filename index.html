@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+<body>
+<main>
+  <!-- Fullscreen Image Popup Modal -->
+<div id="fullImageModal" class="image-modal" onclick="closeFullImage()">
+  <span class="modal-close">&times;</span>
+  <img id="modalTargetImg" src="" alt="Fullscreen Certificate">
+</div>
+
+<nav class="head as">
+  <heading>
+  <div data-i18n="t1" onclick="pages('home')" id="hoe">Home</div>
+  <div data-i18n="t2" onclick="pages('contact')">Contact</div>
+  <div data-i18n="t3" onclick="pages('project')">Projects</div>
+  <div>
+    <select class="selected" onchange="translates(value)">
+      <option value="en">English</option>
+      <option value="am">Amharic</option>
+    </select>
+</heading> 
+  </nav>
+</div>
+
+<section id="home" class="page active">
+<h1 data-i18n="t4" class="as">Welcome to my portfolio!</h1>
+<img id="s" src="s.jpg" onclick="openFullImage('s.jpg')" alt="s.jpg">  
+<p data-i18n="t5">Hi, I am Bisrat Frehiwot grade 11 Ethiopian Highschool student passionate about algorithmic problem solving, modern web interfaces, and data-driven applications. I build responsive, full-stack and front-end web applications with pure JavaScript, solving real-world challenges through creative engineering.</p>
+<h2 data-i18n="t6" class="as">Recognition</h2>
+<p data-i18n="t7">Certified in Data Analysis and Web Development by internationally recognized institutions.</p>
+<div class="certificate">
+<div  onclick="pages('udacity')">Udacity  certificate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></div>
+<div  onclick="pages('free')">FreeCodeCamp certificate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></div>
+</div>
+
+</section>
+
+<section id="project" class="page">
+  <h1 data-i18n="t8">Projects</h1>
+  <h2 data-i18n="t9">Hotel Website Demo</h2>
+  <div>
+    <img class="hot" id="ud1" src="h1.jpg" onclick="openFullImage('h1.jpg')" alt="" />
+    <img class="hot" src="h2.jpg" onclick="openFullImage('h2.jpg')" alt="" />
+    <img class="hot" src="h3.jpg" onclick="openFullImage('h3.jpg')" alt="" /> 
+  </div>
+  <label for="hotl" data-i18n="t10">Link: </label>
+  <a class="hotl" href="https://bf-hotel.vercel.app/">https://bf-hotel.vercel.app/</a>
+</section>
+<section id="udacity" class="page">
+  <div class="cert">
+  <img  class="ud ud2" src="ud1.jpg" onclick="openFullImage('ud1.jpg')" alt="" />
+  <img class="ud ud3" src="ud2.jpg" onclick="openFullImage('ud2.jpg')" alt="" />
+  </div>
+
+</section>
+<section id="free" class="page">
+  <img  class="ud" src="fr.jpg" onclick="openFullImage('fr.jpg')" alt="" />
+</section>
+<section id="contact" class="page">
+  <h1 data-i18n="t11">Contact</h1>
+  <p data-i18n="t12">You can contact me in my phone number, email address, telegram account.</p>
+  <div class="label">
+  <label for="num" class="d" data-i18n="t13">Phone: </label>
+  <a class="num" href="+251 913238160">+251 913238160</a>
+  
+    <label class="l as" for="tel" id="te" data-i18n="t14" >Telegram: </label>
+  <a class="tel" href="@bisre11" id="tel">@Bisref1</a>  
+  <label class="em" for="e" data-i18n="t15">Gmail: </label>
+  <a class="e" href="bisratfrehiwotworku@gmail.com">bisratfrehiwotworku@gmail.com</a>     
+  </div>
+
+
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+
+  </html>
